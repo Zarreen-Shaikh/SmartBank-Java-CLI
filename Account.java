@@ -23,8 +23,8 @@ class Account {
     public void withdraw(double amount) {
         if (amount > 0 && amount <= this.balance) {
             this.balance -= amount;
-            System.out.println("Success! " + amount + " withdrawn.");
-            System.out.println("Remaining Balance: " + this.balance);
+            System.out.println("Success! ₹" + amount + " withdrawn.");
+            System.out.println("Remaining Balance: ₹" + this.balance);
         } else {
             System.out.println("Error: Insufficient funds or invalid amount.");
         }
